@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gang Malam</title>
+  <link rel="stylesheet" href="Assets/style/serenada.css" />
+  <style>
+    /* Additional styles for email form functionality */
+    .loading {
+      display: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #3498db;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .alert {
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      display: none;
+    }
+
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .alert-error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    /* Style for disabled submit button */
+    input[type="submit"]:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Ensure form inputs and labels are properly styled */
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    form input[type="submit"]:hover:not(:disabled) {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="jumbotron">
+      <h1>Serenada Air</h1>
+      <h1>Khlifah Puri</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#hobi">Hobi</a></li>
+        <li><a href="#karya">Karya</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <div id="content">
+      <article id="about" class="card">
+        <h2><span>Tentang</span></h2>
+        <p>Halo! salam kenal semua, aku Puri atau Serenada Air. Aku suka menulis, jalan-jalan, baca buku, bercerita dan suka kamuuu &lt;3.</p>
+        <p>Disini akan menjadi ruang penyimpanan cerita dan pengetahuan yang sedang aku pelajari, tempat beropini = ruang aman.</p>
+      </article>
+
+      <article id="hobi" class="card">
+        <h2><span>Hobi</span></h2>
+        <p>Hobiku traveling dan menuliskan imaji, pengalaman dan opiniku dalam media tulis dan gambar. Hobi buat orang jantungan juga, orang-orang manggil aku Puri si bocah ajaib, karena aku suka ngilang.</p>
+      </article>
+
+      <article id="karya" class="card">
+        <h2><span>Karya</span></h2>
+        <div class="karya-container">
+          <div id="isi_card" class="card">
+            <h3>Puisi</h3>
+            <img src="Assets/img/fotopuisi1.png" alt="foto Puisi">
+            <p>Bagian Puisiku</p>
+            <button><a href="https://serenadaair.blogspot.com/search/label/Puisi">Klik Di Sini</a></button>
+          </div>
+
+          <div id="isi_card" class="card">
+            <h3>Cerpen</h3>
+            <img src="Assets/img/fototulisan2.jpg" alt="foto Tulisan">
+            <p>Bagian Cerpenku</p>
+            <button><a href="https://serenadaair.blogspot.com/search/label/Cerpen%2FShort%20story">Klik Di Sini</a></button>
+          </div>
+
+          <div id="isi_card" class="card">
+            <h3>Perjalanan</h3>
+            <img src="Assets/img/fotoperjalanan4.jpg" alt="foto perjalanan">
+            <p>Bagian Perjalanan</p>
+            <button><a href="https://serenadaair.blogspot.com/search/label/Perjalanan">Klik Di Sini</a></button>
+          </div>
+
+          <div id="isi_card" class="card">
+            <h3>Kegiatan</h3>
+            <img src="Assets/img/fotokegiatan3.jpg" alt="foto kegiatan">
+            <p>Bagian kegiatan</p>
+            <button><a href="https://serenadaair.blogspot.com/search/label/Kegiatan">Klik Di Sini</a></button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <aside>
+      <article class="card" id="profile">
+        <h2><span>Profil</span></h2>
+        <img src="Assets/img/WhatsApp Image 2025-06-04 at 11.31.34.jpeg" alt="Foto Profil" />
+        <p>Nama: Khalifah Puri</p>
+        <p>Pekerjaan: Pelajar, freelance</p>
+      </article>
+    </aside>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <article id="contact" class="card">
+      <h2><span>Kontak</span></h2>
+      
+      <!-- Success and Error Messages -->
+      <div class="alert alert-success" id="successAlert">
+        Email berhasil dikirim! Terima kasih atas pesan Anda.
+      </div>
+      
+      <div class="alert alert-error" id="errorAlert">
+        Terjadi kesalahan. Silakan coba lagi.
+      </div>
+
+      <form id="contactForm">
+        <label for="nama">Nama</label>
+        <input name="nama" id="nama" type="text" required />
+
+        <label for="email">Email <span style="color: red; font-size: x-small">penting</span></label>
+        <input name="email" id="email" type="email" required />
+
+        <label for="pesan">Pesan <span style="color: red; font-size: x-small">penting</span></label>
+        <textarea name="pesan" id="pesan" rows="4" required></textarea>
+
+        <!-- Loading indicator -->
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <p>Mengirim pesan...</p>
+        </div>
+
+        <input type="submit" value="Kirim" id="submitBtn" />
+      </form>
+    </article>
+
+    <p>2025 &copy; Khlifah Putri</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const data = {
+        nama: formData.get('nama'),
+        email: formData.get('email'),
+        pesan: formData.get('pesan')
+      };
+
+      // Get elements
+      const submitBtn = document.getElementById('submitBtn');
+      const loading = document.getElementById('loading');
+      const successAlert = document.getElementById('successAlert');
+      const errorAlert = document.getElementById('errorAlert');
+
+      // Hide previous alerts
+      successAlert.style.display = 'none';
+      errorAlert.style.display = 'none';
+
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.value = 'Mengirim...';
+      loading.style.display = 'block';
+
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          // Success
+          successAlert.style.display = 'block';
+          this.reset(); // Clear form
+          
+          // Scroll to success message
+          successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          // Error
+          errorAlert.textContent = result.message || 'Terjadi kesalahan. Silakan coba lagi.';
+          errorAlert.style.display = 'block';
+          
+          // Scroll to error message
+          errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        errorAlert.textContent = 'Tidak dapat menghubungi server. Periksa koneksi internet Anda.';
+        errorAlert.style.display = 'block';
+        
+        // Scroll to error message
+        errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } finally {
+        // Reset button state
+        loading.style.display = 'none';
+        submitBtn.disabled = false;
+        submitBtn.value = 'Kirim';
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

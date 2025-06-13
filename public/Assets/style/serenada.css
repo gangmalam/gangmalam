@@ -1,0 +1,175 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #721919;
+      color: #0d0e0d;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #630606e0;
+      color: #feffff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      margin: 0.5rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #a71521;
+      padding: 0.5rem 0;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: rgb(250, 249, 249);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      background-color: rgb(218, 220, 240);
+    }
+
+    #content {
+      flex: 3;
+    }
+
+    aside {
+      flex: 1;
+    }
+
+    .card {
+      background-color: rgb(168, 182, 194);
+      padding: 1.5rem;
+      border: 1px solid #7a1818;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 span {
+      border-bottom: 2px solid #e99d9d;
+      padding-bottom: 0.2rem;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    form span {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 1rem;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357abd;
+    }
+
+    footer {
+      padding: 2rem;
+      background-color: #f0f2f5;
+      color: #333;
+      text-align: center;
+    }
+
+    footer .card {
+      background-color: #ffffff;
+      color: #333333;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    footer p {
+      color: #666;
+      margin-top: 1rem;
+    }
+
+    #isi_card {
+      width: 200px;
+    }
+
+    #isi_card:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+      transition: transform 0.9s ease, background-color 0.9s ease;
+    }
+
+    #isi_card2 img {
+      width: 50px;
+    }
+
+    .karya-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+    }
+
+    .karya-container .card {
+      flex: 1 1 200px;
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    button {
+      background-color: #b6262d; /* Green */
+      border: 1px solid rgb(173, 37, 37);
+      border-radius: 10px;
+      color: rgb(182, 225, 226);
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      float: left;
+    }

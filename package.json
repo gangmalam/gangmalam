@@ -1,0 +1,16 @@
+{
+
+  "name": "serenada-form",
+
+  "version": "1.0.0",
+
+  "type": "module",
+
+  "dependencies": {
+
+    "nodemailer": "^6.10.1"
+
+  }
+
+}
+
